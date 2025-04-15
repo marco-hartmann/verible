@@ -90,7 +90,7 @@ verible::lsp::InitializeResult VerilogLanguageServer::GetCapabilities() {
       {"definitionProvider", true},               // Provide going to definition
       {"referencesProvider", true},               // Provide going to references
       // Hover enabled, but not yet offered to client until tested.
-      {"hoverProvider", false},  // Hover info over cursor
+      {"hoverProvider", true},  // Hover info over cursor
       {"renameProvider", true},  // Provide symbol renaming
       {"diagnosticProvider",     // Pull model of diagnostics.
        {
